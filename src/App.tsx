@@ -12,9 +12,8 @@ import {
 import AppLoading from "expo-app-loading";
 import { ThemeProvider } from "styled-components";
 
-import Home from "./screens/Home";
+import { CarDetails } from "./screens";
 import theme from "./styles/theme";
-import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -31,7 +30,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home />
+      <CarDetails />
     </ThemeProvider>
   );
 }
